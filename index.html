@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input, select {
+            margin-bottom: 10px;
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        FirstNumber: <input type="number" id="firstNumber" name="firstNumber" />
+        SecondNumber: <input type="number" id="secondNumber" name="secondNumber" />
+        Operator: 
+            <select name="operator" id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">X</option>
+                <option value="/">÷</option>
+            </select>
+        
+        Your Answer: <input type="number" id="yourAnswer" name="yourAnswer" />
+        <button type="button" id="checkBtn" onclick="checkAnswer()">Check Answer</button> 
+        <button type="button" id="calculateBtn" onclick="calculate()">Calculate</button> 
+        <button type="button" id="generateBtn" onclick="generate()">Generate Random</button> <br/>
+
+        <div id="answer"></div>
+    </form>
+    <script src="math.js"></script>
+    <script src="generate.js"></script>
+</body>
+</html>
